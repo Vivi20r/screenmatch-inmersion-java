@@ -1,16 +1,14 @@
-public class Pelicula {
-    String nombre;
-    int fechaDeLanzamiento;
-    double evaluacion;
-    boolean incluidoEnElPlanBasico;
-    String sinopsis;
-    int tiempoDeDuracionEnMinutos;
+package modelo;
 
+public class Pelicula extends Titulo{
+    private String director;
 
-    void muestraFichaTecnica(){
-        System.out.println("****FICHA TÉCNICA****");
-        System.out.println("Nombre de la película: " + nombre);
-        System.out.println("Fecha de lanzamiento: " + fechaDeLanzamiento);
-        System.out.println("Tiempo de duración: " + tiempoDeDuracionEnMinutos + " minutos");
+    public String getDirector() {
+        return director;
     }
+
+    public void setDirector(String director) {
+        this.director = director;
+    }
+
 }
